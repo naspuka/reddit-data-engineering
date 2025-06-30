@@ -1,0 +1,300 @@
+id,title,selftext,score,num_comments,author,created_utc,url,upvote_ratio,over_18,edited,spoiler,stickied
+1lku9bc,Got lowballed and nerfed in salary talks,"I’m a data engineer in Paris with 1.5~2 yoe. 
+
+Asked for 53–55k, got offered 46k. I said “I can do 50k,” and they accepted instantly.
+
+Feels like I got baited and nerfed. Haven’t signed yet.
+
+How can I push back or get a raise without losing the offer?",108,98,Safe-Ice2286,2025-06-26 07:51:05,https://www.reddit.com/r/dataengineering/comments/1lku9bc/got_lowballed_and_nerfed_in_salary_talks/,0.73,False,False,False,False
+1lkrxqu,The real data is in the comments,"I work in a mundane etl project which does not have any complex challenges which we usually across on this sub. 
+
+And was always worried how I will gain any perspective or solutions to challenges faced in real world complex projects.
+
+But ever since I joined this sub, I have spent so much time going through the detailed comments and i feel it adds so much more value to our understanding of any topic. Simplifying complex terms with examples or maybe help understand why a specific approach or tool works better in a given scenario.
+
+I just wanted to give a shoutout to all senior devs in this sub who take the time out to post detailed comments. your comments are the real data(gold).",90,11,anooptommy,2025-06-26 05:23:17,https://www.reddit.com/r/dataengineering/comments/1lkrxqu/the_real_data_is_in_the_comments/,0.99,False,False,False,False
+1lknorl,"Do you actually have a data strategy, or just a stack?","Curious how others think about this. We’ve got all the tools—Snowflake, Looker, dbt—but things still feel disjointed.Conflicting reports, unclear ownership, slow decisions. Feels like we focused on tools before figuring out the actual plan.
+
+Anyone been through this? How did you course-correct?",53,35,Data-Sleek,2025-06-26 01:38:36,https://www.reddit.com/r/dataengineering/comments/1lknorl/do_you_actually_have_a_data_strategy_or_just_a/,0.96,False,False,False,False
+1ll5gnu,"If your production deployment pipeline had the option to play a song while it runs, what would you choose?",Lay down the code & the beat,14,42,ohitsgoin,2025-06-26 17:02:10,https://www.reddit.com/r/dataengineering/comments/1ll5gnu/if_your_production_deployment_pipeline_had_the/,0.73,False,False,False,False
+1lko7yz,"A practical guide to UDFs: When to stick with SQL vs. using Python, JS, or even WASM for your pipelines.","**Full disclosure:** I'm part of the team at Databend, and we just published a deep-dive article on User-Defined Functions (UDFs). I’m sharing this here because it tackles a question we see all the time: when and how to move beyond standard SQL for complex logic in a data pipeline. I've made sure to summarize the key takeaways in this post to respect the community's rules on self-promotion.
+
+We've all been there: your SQL query is becoming a monster of nested `CASE` statements and gnarly regex, and you start wondering if there's a better way. Our goal was to create a practical guide for choosing the right tool for the job.
+
+Here’s a quick breakdown of the approaches we cover:
+
+* **Lambda (SQL) UDFs:** The simplest approach. The guide's advice is clear: **if you can do it in SQL, do it in SQL**. It's the easiest to maintain and debug. We cover using them for simple data cleaning and standardizing business rules.
+* **Python & JavaScript UDFs:** These are the workhorses for most custom logic. The post shows examples for things like:
+   * Using a Python UDF to validate and standardize shipping addresses.
+   * Using a JavaScript UDF to process messy JSON event logs by redacting PII and enriching the data.
+* **WASM (WebAssembly) UDFs:** This is for when you are truly performance-obsessed. If you're doing heavy computation (think feature engineering, complex financial modeling), you can get near-native speed. We show a full example of writing a function in Rust, compiling it to WASM, and running it inside the database.
+* **External UDF Servers:** For when you need to integrate your data warehouse with an existing microservice you already trust (like a fraud detection or matchmaking engine). This lets you keep your business logic decoupled but still query it from SQL.
+
+The article ends with a ""no-BS"" best practices section and some basic performance benchmarks comparing the different UDF types. The core message is to start simple and only escalate in complexity when the use case demands it.
+
+**You can read the full deep-dive here:** [https://www.databend.com/blog/category-product/Databend\_UDF/](https://www.databend.com/blog/category-product/Databend_UDF/)
+
+I'd love to hear how you all handle this. What's your team's go-to solution when SQL just isn't enough for the task at hand?",15,6,Asleep-Rise-473,2025-06-26 02:04:41,https://www.reddit.com/r/dataengineering/comments/1lko7yz/a_practical_guide_to_udfs_when_to_stick_with_sql/,0.9,False,False,False,False
+1llee72,"Which sites, platforms or blogs do you regularly check to stay up to date, find insights, and satisfy your curiosity?","I’ve gotten into the habit of checking Hacker News, GitHub’s trending repositories, and the dataengineering subreddit each morning to see what’s new and interesting, as well as alerts from some blogs like Paul Graham, etc. 
+
+However, there's a lot of noise, and the content tends to be biased toward certain sectors and topics.
+
+What are your main sources for news and daily reading? Where do you usually find high-quality information? 
+
+",7,3,Xavio_M,2025-06-26 23:01:57,https://www.reddit.com/r/dataengineering/comments/1llee72/which_sites_platforms_or_blogs_do_you_regularly/,0.82,False,False,False,False
+1lkuexh,Is a degree in CS a requirement?,"I’m in my second year of uni studying finance & maths, but I’m not sure I want a career in finance. I love statistics, math, and have some experience coding in python, which is self taught. I’ve been having a lot of anxiety lately about what I want to do and how I’m going to get there. The thought of changing my degree and fully committing to something that we really don’t know how AI will affect is scaring me, and I would have wasted the thousands of dollars doing finance if I switch now. If I start and cant land a job, at least I have a finance degree up my sleeve. 
+
+So, i guess I’m particularly asking if my maths major can carry me a bit, and I can self teach myself the coding and practical aspects. Is this even plausible? I’ve seen people self teach themselves to become software engineers - and I’m curious if that’s an option for me. If so, where would you start? ",4,15,Background-Tip4746,2025-06-26 08:01:17,https://www.reddit.com/r/dataengineering/comments/1lkuexh/is_a_degree_in_cs_a_requirement/,0.65,False,False,False,False
+1lkx40g,What is a data strategy?,Posted this as response in another thread but I’m so confused by what a data strategy would be? What are the tradeoffs or choices it would include?,5,5,thepenetrator,2025-06-26 10:54:20,https://www.reddit.com/r/dataengineering/comments/1lkx40g/what_is_a_data_strategy/,0.7,False,False,False,False
+1ll9gvk,Question about CDC and APIs,"Hello, everyone!
+
+So, currently, I have a data pipeline that reads from an API, loads the data into a Polars dataframe and then uploads the dataframe to a table in SQL Server. I am just dropping and recreating the table each time. with `if_table_exists=""replace""`.
+
+Is an option available where I can just update rows that don't match what's in the table? Say, a row was modified, deleted, or created.
+
+A sample response from the API shows that there is a `lastModifiedDate` field but wouldn't still require me to read every single row to see if the `lastModifiedDate` doesn't match what's in SQL Server?
+
+I've used CDC before but that was on Google Cloud and between PostgreSQL and BigQuery where an API wasn't involved.
+
+Hopefully this makes sense!",3,6,digitalghost-dev,2025-06-26 19:37:22,https://www.reddit.com/r/dataengineering/comments/1ll9gvk/question_about_cdc_and_apis/,0.72,False,False,False,False
+1ll7ah8,dagster-iceberg,"👋 Hi, there.
+Now i working with dagster-iceberg and have problem with EnvVar in defenitions.
+
+
+defs = Definitions(
+    assets=[breaks_files],
+resources={
+        'iceberg_io_manager': PyArrowIcebergIOManager(
+            name=""default"",
+            config=IcebergCatalogConfig(
+                properties={
+                    ""type"": ""hive"",
+                    ""uri"": EnvVar('HIVE_METASTORE_URI'),
+                    ""warehouse"": EnvVar('HOT_STORAGE_ENDPOINT_URL'),
+                    ""s3.access_key_id"": EnvVar('S3_ACCESS_KEY_ID_ICEBERG'),
+                    ""s3.secret_access_key"": EnvVar('S3_SECRET_ACCESS_KEY_ICEBERG'),
+                }
+            ),
+            namespace=""default"",
+        ),
+})
+
+
+import dagster as dg
+import pyarrow as pa
+
+from src.sources.custom_file_source import download_and_parse_file
+
+
+@dg.asset(io_manager_key=""iceberg_io_manager"")
+def breaks_files(context: dg.AssetExecutionContext) -> pa.Table:
+    """"""Asset for loading and processing break files into Iceberg""""""
+    url = 'https://drive'
+    return download_and_parse_file(url)
+
+
+ When i use EnvVar my asset is not work, but if i pass hardcode to properties is work, how i fix this problem?
+I need to pass iceberg_io_manager to asset?",5,3,ivanimus,2025-06-26 18:11:34,https://www.reddit.com/r/dataengineering/comments/1ll7ah8/dagstericeberg/,0.86,False,1750965155.0,False,False
+1lky1ch,Need Help for 'Data Engineer' Interviews,"**Hello everyone,**
+
+I hope you're all doing well.
+
+I'm reaching out here to ask for some guidance or suggestions as I continue my job search in the data engineering field.
+
+Let me introduce myself briefly. I began my career in 2017 as a junior data engineer and worked in India for 5 years. During that time, I gained solid experience with technologies such as Spark, Airflow, AWS, CI/CD, Kafka, Elasticsearch, SQL, Python, Scala, and a bit of GCP. These form the core of my technical background.
+
+After working with two companies in India, I moved to the UK in mid-2022 to pursue a Master’s degree in Data Science. It was a one-year program, and I graduated in 2023 with distinction. Right after graduation, I worked as a Machine Learning Research Assistant in the UK until February 2025. Around that time, I moved to Ireland on a joint visa, and I'm currently settled here.
+
+Since March 2025, I've been actively looking for opportunities in data engineering or software development. I’ve been fortunate to receive interviews from some great companies. I’ll admit, I wasn’t fully prepared for the first two or three, but since then, I’ve put in a lot of focused effort. I'm now quite confident in SQL, Python, and problem-solving.
+
+However, it’s now June, and I still haven’t landed a role. I’ve reached the final rounds in 3 or 4 interviews, but unfortunately, the outcomes have been negative. This has been difficult emotionally, and I'm growing concerned about the employment gap it’s creating in my career.
+
+I can feel the competition is intense, especially in the data engineering field. Some people are even surprised that I haven’t secured a role yet, given my 5+ years of experience and a master’s degree. I understand their perspective, but I’m truly doing everything I can.
+
+If anyone has any advice, guidance, or even just words of encouragement, I would deeply appreciate it. If you were in my position, what would you do? I’m starting to feel like my career is slipping away, and any support would mean a lot to me right now.
+
+Thank you so much in advance.",3,6,jroy94sw,2025-06-26 11:46:07,https://www.reddit.com/r/dataengineering/comments/1lky1ch/need_help_for_data_engineer_interviews/,0.6,False,False,False,False
+1lkojrj,DSPy powered AI pipelines for geo-aware sentiment analysis,,3,0,TheLostWanderer47,2025-06-26 02:20:37,https://differ.blog/p/i-used-ai-agents-google-to-compare-how-different-countries-12b3f1,0.81,False,False,False,False
+1ll7wcg,Advice,"Dunnhumby @ 21.9 LPA or American Express @ 22 LPA or EXL @ 19.8 LPA  
+I am a DE with over 3 years of experience, and this is my first career switch. I currently have three offers, with around 40+ days remaining in my notice period.  
+I am from a Tier 3 [B.Tech](http://B.Tech) college and work at a service-based data analytics company. I need a brand tag name on work profile, help me chose between these three.",2,2,Patient_Side5450,2025-06-26 18:35:24,https://www.reddit.com/r/dataengineering/comments/1ll7wcg/advice/,0.67,False,False,False,False
+1ll65cz,EMR on EKS -- Dynamic Allocation + FSx Lustre: Executors with shuffle data won't terminate despite idle timeout,"Having trouble getting dynamic allocation to properly terminate idle executors when using FSx Lustre for shuffle persistence on EMR 7.8 (Spark 3.5.4) on EKS.  Trying this strategy out to battle cost via severe data skew (I don't really care if a couple nodes run for hours while the rest of the fleet deprovisions)
+
+**Setup:**
+
+* EMR on EKS with FSx Lustre mounted as persistent storage
+* Using KubernetesLocalDiskShuffleDataIO plugin for shuffle data recovery
+* **Goal:** Cost optimization by terminating executors during long tail operations
+
+**Issue:**  
+Executors scale up fine and FSx mounting works, but idle executors (0 active tasks) are not being terminated despite 60s idle timeout. They just sit there consuming resources. Job is running successfully with shuffle data persisting correctly in FSx.  I previously had DRA working without FSx, but a majority of the executors held shuffle data so they never deprovisioned (although some did).
+
+**Questions:**
+
+1. Is the KubernetesLocalDiskShuffleDataIO plugin preventing termination because it thinks shuffle data is still needed?
+2. Are my timeout settings too conservative? Should I be more aggressive?
+3. Any EMR-specific configurations that might override dynamic allocation behavior?
+
+Has anyone successfully implemented dynamic allocation with persistent shuffle storage on EMR on EKS? What am I missing?
+
+**Configuration:**
+
+    ""spark.dynamicAllocation.enabled"": ""true"" 
+    ""spark.dynamicAllocation.shuffleTracking.enabled"": ""true"" 
+    ""spark.dynamicAllocation.minExecutors"": ""1"" 
+    ""spark.dynamicAllocation.maxExecutors"": ""200"" 
+    ""spark.dynamicAllocation.initialExecutors"": ""3"" 
+    ""spark.dynamicAllocation.executorIdleTimeout"": ""60s"" 
+    ""spark.dynamicAllocation.cachedExecutorIdleTimeout"": ""90s"" 
+    ""spark.dynamicAllocation.shuffleTracking.timeout"": ""30s"" 
+    ""spark.local.dir"": ""/data/spark-tmp"" ""spark.shuffle.sort.io.plugin.class"": 
+    ""org.apache.spark.shuffle.KubernetesLocalDiskShuffleDataIO"" 
+    ""spark.kubernetes.executor.volumes.persistentVolumeClaim.spark-local-dir-1.options.claimName"": ""fsx-lustre-pvc"" 
+    ""spark.kubernetes.executor.volumes.persistentVolumeClaim.spark-local-dir-1.mount.path"": ""/data"" 
+    ""spark.kubernetes.executor.volumes.persistentVolumeClaim.spark-local-dir-1.mount.readOnly"": ""false"" 
+    ""spark.kubernetes.driver.ownPersistentVolumeClaim"": ""true"" 
+    ""spark.kubernetes.driver.waitToReusePersistentVolumeClaim"": ""true""
+
+**Environment:**  
+EMR 7.8.0, Spark 3.5.4, Kubernetes 1.32, FSx Lustre",2,1,__dog_man__,2025-06-26 17:27:58,https://www.reddit.com/r/dataengineering/comments/1ll65cz/emr_on_eks_dynamic_allocation_fsx_lustre/,0.76,False,False,False,False
+1ll3ubp,Course Recommendations,"Receiving educational assistance up to 75% and max $5K. I don’t want to dedicate too much time but I also want to take advantage of it.
+
+Currently thinking certificates or trainings but unsure what paid trainings are actually worth it.
+
+Some areas I think I would be interested in/my areas of improvement:
+- Analytics
+- Visualization
+- Data modeling
+- DBA stuff
+- Maybe getting updated in latest advancements in DE space
+
+
+Edit: I am a DE with 4+ YOE and would like to use this to help with moving into a Senior position in the near future",2,1,Professional_Peak983,2025-06-26 15:59:01,https://www.reddit.com/r/dataengineering/comments/1ll3ubp/course_recommendations/,0.76,False,1750953877.0,False,False
+1llfllt,Seeking for Career Advise,"**Hi everyone,**
+
+This is my first time sharing my life and career journey here. The purpose of this post is to seek advice and guidance from more experienced individuals or professionals in the industry. I wanted to open up and share my story — not to impress or exaggerate — but to be transparent and learn from this community. I also hope parts of my journey may be helpful or motivational to others who might be facing similar paths.
+
+# A little about me:
+
+I'm 29 years old, married, and a father of one. I currently live in the Klang Valley and work in Cyberjaya. I graduated with a degree in Mechanical Engineering, but I’ve spent almost five years working in the IT and tech field.
+
+# 1st Job – Startup Founder (Robotics for Education):
+
+While studying at UTM, I co-founded a robotics education startup with a partner. We designed and developed robotics learning modules for children aged 7–17 to promote STEM education. We handled everything from R&D to deployment. Although our personal income varied between RM500–RM2,500 depending on company performance, we managed to secure a major project worth RM50,000 with JPNJ and generated close to RM200,000 in annual revenue.
+
+# 2nd Job – UAV Engineer to Senior Engineer (Cyberjaya):
+
+After graduating and running the startup for about 2 years, I joined a drone technology startup that was later acquired by one of Malaysia’s leading drone companies. I began as a UAV Engineer with a starting salary of RM3,500 and was placed in the IT department in Cyberjaya.
+
+Within 6 months, I was promoted to Senior Engineer with a salary increase to RM6,000. I had a supportive manager who recognized my contributions, which really helped boost my learning and confidence. Unfortunately, that manager eventually left the company.
+
+# 3rd Job – Senior Hardware Engineer to Assistant Manager (HQ):
+
+After some time, the company went through restructuring, and I was transferred to the HQ as a Senior Hardware Engineer with a slight raise to RM6,220. My role expanded into IoT and tech development. I’m also a certified drone pilot and have worked on-site for several field projects.
+
+Realizing the importance of upskilling, I pursued certifications in data science (USM), Huawei Big Data, and Google IT Automation. Despite coming from a mechanical background, I learned a lot about drones, networks, and systems architecture — mostly self-taught and with the help of supportive colleagues.
+
+Eventually, I was promoted to Assistant Manager (without a salary increment), but recently the company’s financial situation worsened — salaries have been delayed, EPF contributions haven’t been made for 7 months, and the company is planning to downsize. Many colleagues have already moved on. However, the company still high in value and many project in hands.
+
+# Where I’m headed:
+
+I am genuinely passionate about solving technical problems hands-on. I don’t see myself in a people management track long term. Instead, I hope to progress along a senior technical career path in the next 5–10 years — potentially becoming a principal engineer, solutions architect, or technical lead.
+
+However, I’m unsure which direction I should take now. Should I stick to my current domain (embedded/IoT/drone/network) or pivot into a new field (e.g., cloud, AI/ML, data engineering)?
+
+# I’d like to ask for advice from experienced professionals and senior engineers:
+
+1. Given my situation, should I stay with my current company or start actively searching for a new job?
+2. What roles or fields would best align with my technical background and long-term goal of being a senior technical specialist?
+3. Which technical certifications or learning paths would give me the most ROI over the next 1–2 years?
+4. How can I position myself as a strong candidate despite my non-IT academic background?
+5. Are there any niche fields (AI, IoT, cybersecurity, etc.) that are growing fast in Malaysia and worth pivoting into?
+
+I sincerely appreciate any insights, feedback, or encouragement from this community. Thank you for reading this far.",1,1,Flaky_Creme4544,2025-06-26 23:56:45,https://www.reddit.com/r/dataengineering/comments/1llfllt/seeking_for_career_advise/,1.0,False,False,False,False
+1lkuevq,Need help deciding on which OLAP to use for my Student-Teacher Reporting System,"Hey everyone! I’m building a teacher–student reporting system and need help deciding on the best database for the OLAP/reporting layer. (I used chat gpt to generate some parts of this post since English is not my first language, please understand)Here’s my current setup and thinking:
+
+Context:
+
+1. Live OLTP goes to PostgreSQL:
+   * Manages roles, users, articles, student reads/tests, etc.
+2. Reporting OLAP needs to handle:
+   * Reading statistics (e.g. time spent per article)
+   * Test scores (per student, per class)
+   * Very large volumes of events (potentially millions/billions of rows)
+
+I've researched and believe ClickHouse, a columnar OLAP DBMS, is the best fit since it's open source and way cheaper than many managed data warehouses. Also, looking at different reddit posts, it seems like Clickhouse is 2–5× faster than Redshift. And for my reporting layer, I think Clickhouse's append‑only event data fits perfectly since there's no need for updates.
+
+# And here are the alternatives that I'm considering:
+
+* MongoDB: great for OLTP, but not built for large-scale analytics.
+* Redshift (AWS): solid, but 2–5× slower than ClickHouse and significantly more expensive, also criticized for complex tuning .
+* Apache Druid / Pinot: strong for real-time dashboards, but heavier on infrastructure.
+* StarRocks / Doris: emerging, good for join-heavy queries—but less mature than ClickHouse.
+* Apache Spark / Trino over S3 data lake: flexible, but higher latency and more complexity
+
+So my questions are:
+
+1. Does ClickHouse make sense for dense, append‑only reporting on students' reading time on each article and their test scores?
+2. Have you hit pitfalls using ClickHouse for aggregation queries across millions of rows?
+3. If not ClickHouse, why choose (and how would it integrate with PostgreSQL + ETL + AWS S3)?
+4. Anyone run ClickHouse vs Redshift/Druid/Pinot/StarRocks in a similar education analytics context?
+
+Our ideal system:
+
+* PostgreSQL for live operations
+* ETL (or CDC) pipeline that dumps data into OLAP DB
+* Fast query support for teacher dashboards (sub-second)
+* Cost-effective and maintainable on AWS
+
+Thanks for your help! 🙏",1,4,Impressive_Spare4650,2025-06-26 08:01:12,https://www.reddit.com/r/dataengineering/comments/1lkuevq/need_help_deciding_on_which_olap_to_use_for_my/,0.67,False,False,False,False
+1ll6kz2,The Dashboard Doppelgänger: When GenAI Meets the Human Gaze,,0,0,growth_man,2025-06-26 17:44:35,https://moderndata101.substack.com/p/building-dashboards-with-genai,0.5,False,False,False,False
+1llcjy2,Opportunity to join start up I’m not politically aligned with,"Without making this about politics, I recently applied to a start up without really doing any research on it. As you can imagine it’s a tough market so I’ve just been firing away. Spoke to the recruiter and hiring manager and I’m moving on to the technical round. the opportunity sounds promising as I would be their first analytics engineer. It’s a small start up in their series A so it’s quite new. However as I learned more about the founders they tend to lean towards the camp that I don’t agree with. That being said I’m not some hard core political activists and I like making money but something about this makes me feel like I wouldn’t be happy especially if I’m not aligned with the mission. On the other hand, I’d be making more and get a fresh new start, it’d be great experience to learn as well. I currently work at a start up right now and you guessed it I’m not too happy here as well as I’ve been trying to find a way out. I don’t want to leave one toxic environment to go to another one. 
+
+Just wanted to hear some thoughts and if any of you have been in a similar situation. ",0,33,burningburnerbern,2025-06-26 21:42:02,https://www.reddit.com/r/dataengineering/comments/1llcjy2/opportunity_to_join_start_up_im_not_politically/,0.33,False,False,False,False
+1ll4sw4,Should I switch to DE?,"Hey guys, I need your help to make a decission between 2 job offers. For some context, I'm a new grad un CS and currently in an internship as Data Analyst at a startup thats been doing well. I live in a thirld world country so the job market isnt that bad. Recently I received an offer as a Data Engineer from a medium sized bank, but the startup offered me a contract as a full time DA matching the salary from the DE offer (benefits are pretty much the same). Now I don't know which one should I choose because I really like what I currently do and the work environment and the people are great. However, I fear that I'll be hindering my future by staying as a DA rather than switching to DE (I think it's a proffession with a better carreer path). What do you think I should do? Any tips/advices are greatly appteciated",0,4,Santimaster13,2025-06-26 16:36:17,https://www.reddit.com/r/dataengineering/comments/1ll4sw4/should_i_switch_to_de/,0.45,False,False,False,False
+1lkz92q,Struggling to find data engineers with data viz skills,"hey reddit,
+
+We’ve been looking for data engineers to join our team for a month now, but haven’t found the right specialist yet. If you’re interested in data engineering and want to strengthen your data visualization skills, here is simple 3-week plan to get you up quickly:
+
+Week 1:
+
+Get the basics down with Matplotlib & Seaborn. Focus on simple plots (line, bar, scatter) and learn which chart fits which type of data.
+
+Week 2:
+
+Start customizing your visuals—experiment with colors, labels, and styles. Try out more plot types like heatmaps and boxplots. Practice telling a story with your charts, not just making them look good.
+
+Week 3:
+
+Go interactive with plotly or altair. Build a mini-project using a dataset you care about, document your process, and share it on GitHub or LinkedIn.
+
+Let’s be real, no one reads endless tutorials. Real projects are where you actually learn.
+
+Tips:
+Use real data for practice
+Keep learning and experimenting; you can master data visualization quickly if you stick to a focused plan
+
+Drop your comments below, any type of feedback is appreciated.
+
+",0,10,Dependent_Gur1387,2025-06-26 12:46:54,https://www.reddit.com/r/dataengineering/comments/1lkz92q/struggling_to_find_data_engineers_with_data_viz/,0.23,False,False,False,False
+1lkm5cq,🚀 Building a Text-to-SQL AI Tool – What Features Would You Want?,"Hi all – my team and I are building an AI-powered data engineering application, and I’d love your input.
+
+The core idea is simple:  
+**Users connect to their data source and ask questions in plain English → the tool returns optimized SQL queries and results.**
+
+Think of it as a conversational layer on top of your data warehouse (e.g., Snowflake, BigQuery, Redshift, etc.).
+
+We’re still early in development, and I wanted to reach out to the community here to ask:
+
+👉 **What features would make this genuinely useful in your day-to-day work?**  
+Some things we’re considering:
+
+* Auto-schema detection & syncing
+* Query optimization hints
+* Role-based access control
+* Logging/debugging failed queries
+* Continuous feedback loop for understanding user intent
+
+Would love your thoughts, ideas, or even pet peeves with other tools you’ve tried.
+
+Thanks! 🙏",0,19,Medium_City_2466,2025-06-26 00:23:45,https://www.reddit.com/r/dataengineering/comments/1lkm5cq/building_a_texttosql_ai_tool_what_features_would/,0.29,False,False,False,False

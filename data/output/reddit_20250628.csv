@@ -1,0 +1,155 @@
+id,title,selftext,score,num_comments,author,created_utc,url,upvote_ratio,over_18,edited,spoiler,stickied
+1llt6y9,"Do you use CDC? If yes, how does it benefit you?","I am dealing with a data pipeline that uses CDC on pretty much all DB tables.
+The changes are written to object storage, and daily merged to a Delta table using SCD2 strategy. One Delta for each DB table.
+
+After working with this for a few months, I have concluded that, most likely, the project would be better off if we just switched to daily full snapshots, getting rid of both CDC and SCD2.
+
+Which then led me to the above question in the title: did you ever find yourself in a situation were CDC was the optimal solution? If so, can you elaborate? How was CDC data modeled afterwards?
+
+Thanks in advance for your contribution!",63,81,wtfzambo,2025-06-27 12:56:16,https://www.reddit.com/r/dataengineering/comments/1llt6y9/do_you_use_cdc_if_yes_how_does_it_benefit_you/,0,False,False,False,False
+1lm5zle,What is happening in the Swedish job market right now?,"I noticed a big upswing in recruitment the last couple of months. I changed job for a big pay increase 3 months ago, and next month I will change job again for another big pay increase. I have 1.5 years of experience and I'm going to get paid like someone with 10 years of experience in Sweden. It feels like they are trying to get anyone who has watched a 10 minute video about Databricks",47,44,BadBouncyBear,2025-06-27 21:43:18,https://www.reddit.com/r/dataengineering/comments/1lm5zle/what_is_happening_in_the_swedish_job_market_right/,0,False,False,False,False
+1llv0oe,Data Engineer or Software Engineer - Data,"Obviously titles are not that important in the grand scheme of things, however, I might have the option between titles. Which do you think is more favorable Data Engineer or Software Engineer - Data?",29,21,eastieLad,2025-06-27 14:16:40,https://www.reddit.com/r/dataengineering/comments/1llv0oe/data_engineer_or_software_engineer_data/,0,False,False,False,False
+1lm96a5,Comparison of modern CDC tools Debezium vs Estuary Flow,Inspired by the recent discussions around CDC I have written in depth article about modern CDC tools.,20,2,subhanhg,2025-06-28 00:06:33,https://dataheimer.substack.com/p/the-ultimate-guide-to-change-data,0,False,False,False,False
+1llvqzs,Would you take a $27K pay cut to land your first DE role?,"Hey everyone—I could really use some advice.
+
+I’m currently a senior data analyst working in healthcare fraud analytics and model development at a large government contracting firm. Our client has multiple contracts with us, and I support one of them. I’ve been interested in moving into data engineering for a while and am about halfway through a master’s in computer and information technology.
+
+Recently, I asked if I could shadow the DE team on an adjacent contract, and they brought me in for their latest sprint. Shortly after, the program manager on that team asked if I’d be interested in applying for an open DE role. I was thrilled—it felt like the perfect opportunity.
+
+I already know the data really well (I worked on their recent migration efforts and use their tables regularly), and I’m familiar with some of the team. It’s a solid internal move with a lot of alignment.
+
+The catch? I’d have to take a $27K pay cut—from $137K to $110K.
+I expected a cut since I don’t have formal DE experience and would be stepping into a mid-level role, but that number feels steep—especially since I live in a high cost of living area and recently bought a house.
+
+⸻
+
+My question for you all:
+1. Would you take the job anyway, just to get your foot in the door?
+2. Has anyone else here made a similar internal switch from analyst to DE? How did it work out long-term?
+3. Are there ways to negotiate this kind of internal transition to ease the pay gap? (e.g. retention bonus, hybrid role, defined promotion path)
+4. If I pass this up, how hard would it be to break into DE externally without prior experience or the DE title?
+
+Any perspective—especially from folks who’ve made the jump or hired junior/mid DEs—would really help. Thanks in advance!",18,61,Miserable-Toe5090,2025-06-27 14:47:15,https://www.reddit.com/r/dataengineering/comments/1llvqzs/would_you_take_a_27k_pay_cut_to_land_your_first/,0,False,False,False,False
+1lm7j6u,Fast spatial query db?,"I've got a large collection of points of interest (GPS latitude and longitude) to store and am looking for a good in-process OLAP database to store and query them from, which supports spatial indexes and ideally out-of-core storage and Python on Windows support.
+
+Something like DuckDB with their spatial extension would work, but do people have any other suggestions?
+
+An illustrative use case is this: the db stores the location of every house in a country along with a few attribute like household income and number of occupants. (Don't worry that's not actually what I'm storing, but it's comparable in scope). A typical query is to get the total occupants within a quarter mile of every house in a certain state. So I can say that 123 Main Street has 100 people living nearby....repeated for 100,000 other addresses. 
+",11,15,InternationalMany6,2025-06-27 22:50:14,https://www.reddit.com/r/dataengineering/comments/1lm7j6u/fast_spatial_query_db/,1,False,False,False,False
+1lmdw0p,Semantic layer vs Semantic model,"Hello guys, I am having a difficulty finding out the definition of what exactly semantic layer and semantic model is? 
+My understanding is semantic layer is just business friendly names of tables from database just like a catalog. And semantic model is building relationships measures with business friendly table and field names. Different AI tools telling different definitions. I am confused. Can someone explain me
+1. What is semantic layer?
+2. What is semantic model?
+3. Which comes first?
+4. Where can I build these two? ( I mean tools ) 
+
+",16,11,PresentationTop7288,2025-06-28 04:19:13,https://www.reddit.com/r/dataengineering/comments/1lmdw0p/semantic_layer_vs_semantic_model/,1,False,False,False,False
+1lm5s13,Prefect Self-Hosted Server?,Has anybody here gone the route of a self-hosted Prefect server rather than Prefect Cloud? Can you actually run the server version on Windows? I tried l looking through the documentation and it mentioned running on Linux and Docker but not much else from what I could find.,7,4,mild_convective_strm,2025-06-27 21:34:16,https://www.reddit.com/r/dataengineering/comments/1lm5s13/prefect_selfhosted_server/,0,False,False,False,False
+1lmaqrx,Wanting to copy csv files from SharePoint to Azure Blob storage,"I'm trying to copy files from a SharePoint folder to ADLS (initially just by pointing at a folder but eventually do something to look for changed files). Naturally I thought to use Data Factory but it seems the docs are out of date. 
+
+Anyone have a successful guide or link that works in 2025?",8,1,RobDoesData,2025-06-28 01:25:57,https://www.reddit.com/r/dataengineering/comments/1lmaqrx/wanting_to_copy_csv_files_from_sharepoint_to/,1,False,False,False,False
+1lm44es,Best way to schedule python job in azure,"So, we are using Azure with snowflake and I want to schedule a python program which does some admin work and need to schedule it and write the data into snowflake table. What would be the best way to schedule it? I am not going to run it everyday, probably once per quarter.  I was thinking to azure runbook. My python package requires some packages such as azure identity and snowflake connector for python but it really doesn't work well with runbook and have so many restriction.  What could be other options?  
+",4,6,boogie_woogie_100,2025-06-27 20:23:55,https://www.reddit.com/r/dataengineering/comments/1lm44es/best_way_to_schedule_python_job_in_azure/,0,False,False,False,False
+1llrd1d,Where do you store static element you need to?,"I was wondering where do you usually store static element that are often require to ingest or to filter in your different pipeline.
+
+Currently we use DBT seeds, for most of them, this remove static elements from our SQL files but CSV seeds are often not enough to represent the static element I require.
+
+For example, one of my third party vendors have an endpoint which return a bunch of data in a lot of different format, I would like to track a list of the format I’ve approved, validated, etc.
+The different type of data are generally handle by 2 elements. I would like to avoid having to define element1, subelement1, approved, format_x
+
+element1, subelement2, approved, format_y.
+
+I currently can do this in seeds but what I would like is a kind of CRM that allow me to do relations. So if element1 is approve than that’s something, and I have somewhere else to store all approved subelement for this.
+
+Might be complicate to understand in simple words, but tldr how do you store static things that are required for your pipeline ? I want something else than juste a table in Postgres because I want non tech people to be able to add elements
+
+We currently use Salesforce for some stuff, but are going away from it so I try to find a simple solution which can work for DE and not necessary the company as a hole. Something simple nothing fancy is required.
+
+Thanks",6,5,Commercial_Dig2401,2025-06-27 11:21:09,https://www.reddit.com/r/dataengineering/comments/1llrd1d/where_do_you_store_static_element_you_need_to/,0,False,False,False,False
+1lm69l1,When did conda-forge start to carry PySpark,"Being a math modeller instead of a computers scientist, I found the process of connecting Anaconda Python to PySpark to be extremely painful and time consuming.  Each time I had to do this on another computer.
+
+Just now, I found that conda-forge carries PySpark.  I wonder how long it has been available, and hence, whether I could have avoided the ordeals in getting PySpark working (and not very well, at that).
+
+Looking back at the files [here](https://anaconda.org/conda-forge/pyspark/files), it seems that it started 8 years ago, which is much longer than I've been using Python, and much, much longer than my stints into PySpark.  Is this a reasonably accurate way to determine how long it has been available?",4,1,MereRedditUser,2025-06-27 21:55:05,https://www.reddit.com/r/dataengineering/comments/1lm69l1/when_did_condaforge_start_to_carry_pyspark/,1,False,False,False,False
+1llsfls,Azure DevOps & MYSQL,"Not sure if this is the correct forum, so apologises.
+Am from a SQL Server background and using CI/CD is pretty straight forward with DACPACs and pipelines.  Was wondering if anyone had any advice/experiences doing CI/CD pipelines for MYSQL ?
+Am trying to use Flyway, but it looks like their is a fair bit of manual intervention generating scripts for deployment.
+Is this the best way I have to achieve deployments or is this a bonkers old antiquated way of doing this ?
+Please feel free to shoot this down.  Any advice very much appreciated 👏 
+Thanks people 🥳",2,0,Status-Locksmith5158,2025-06-27 12:19:14,https://www.reddit.com/r/dataengineering/comments/1llsfls/azure_devops_mysql/,0,False,False,False,False
+1lme7zn,What to learn first ? stuck on lots of different technologies,"Hi, just overwhelmed with all the stack to become a DE (or similar role), and land an entry job.
+
+I have a background in tech, also have a CS degree ( Mexico btw, not sure if it helps a lot)
+
+I do know Python (basic and POO stuff) also Java and Angular (main stack) ,but currently im working with SIEBEL( Oracle CRM) and i think im getting stuck in this tech and i want a change, i think it helps that i use a lot of SQL (not for big data)
+
+I know the very basics of Python for analysis 
+
+I took a course for PowerBi (not sure if needed but hope it does)and im thinkin to learn spark next, but theres a lot of things that im missing, such a data warehouses or cloud.
+
+But i think im a bit lost about the ""path"" i should follow , i know its hard  to start as a DE or similar but i want to be as prepared as i can be for future interviews.
+
+So any tips are welcomed, tips for interviews aswell
+
+Thank you.
+
+",5,8,erickedrm,2025-06-28 04:38:49,https://www.reddit.com/r/dataengineering/comments/1lme7zn/what_to_learn_first_stuck_on_lots_of_different/,0,False,False,False,False
+1llxkem,Interesting links - June 2025,,3,0,rmoff,2025-06-27 16:00:22,https://rmoff.net/2025/06/27/interesting-links-june-2025/,0,False,False,False,False
+1lmj6lf,Best use of spare time in company,"Hi! I’m currently employed as a data engineer at a geospatial   based company, but I’ve been mostly doing analysis using Pyspark and have been working with Python. The problem is I am not sure if I am learning enough or learning about the tools necessary for future prospects if I were to look for a similar data engineering position at the next company. The workload isn’t too bad though, and I do have time to learn other skills, so I was wondering what should I invest in to be more favorable towards recruiters in the next year. The other employees use Java and PostgreSQL for PostGIS, but if my next company won’t be in the geospatial domain, then learning PostGIS won’t be that useful for me in the long term. Do you guys have any advice? Thank you!",2,3,patronus816,2025-06-28 10:00:51,https://www.reddit.com/r/dataengineering/comments/1lmj6lf/best_use_of_spare_time_in_company/,1,False,False,False,False
+1lmj0fq,Looking for an alternative to BigQuery/DataFlow,"Hello everyone,
+
+The data engineering team in my company uses BigQuery for everything and it's starting to cost too much. I'm a cloud engineer working on AWS and GCP and I am looking for new techniques and new tools that would cut costs drastically.
+
+For the metrics, we have roughly 2TiB active storage, 25TiB of BigQuery daily analysis (honestly, this seems a lot to me) and 40GiB daily streaming insert.  
+We use Airflow and Dagster to orchestrate the DataFlow and python pipelines.
+
+At this scale, it seems that the way to go is to switch to a lakehouse model with iceberg/Delta in GCS and process the data using DuckDB or Trino (one of the requirements is to keep using SQL for most of the data pipelines).
+
+From my researches :
+
+* DuckDB can be executed in-process but does not fully support Iceberg or Delta
+* Iceberg/Delta seems mandatory as it manages schema evolution, time travel and a data catalog for discovery
+* Trino must be deployed in a cluster and i would prefer avoid this unless if there are no other solutions
+* pyspark with SparkSQL seems to have cold start issues and is non trivial to configure.
+* Dremio fully supports iceberg and can be executed in K8S pods with the Airflow Kubernetes Operator
+* DuckLake is extremely recent and i fear this is not prod-ready
+
+So, my first thought is to use SQL pipelines with Dremio launched by Airflow/Dagster + Iceberg tables in GCS.
+
+What are your thoughts on this choice ? Did i miss something ? I will take any advice !
+
+Thanks a lot !!",3,1,iRayko,2025-06-28 09:49:16,https://www.reddit.com/r/dataengineering/comments/1lmj0fq/looking_for_an_alternative_to_bigquerydataflow/,1,False,False,False,False
+1lmiupv,LIquidity aggregator with quixstreams,"Hi all, I have a question for you guys. I'm currently building a liquidity aggregator from various exchange platforms, with a frontend, using **Quixstreams** library and **Kafka**.
+
+Basically the user of the webapp will be able to enter several financial products, and each time he enters a new product it would show the price of the product every two seconds. Two blocks of code would be ""launched"": the ExchangeFetcherManager class will be instantiated and call the different exchange plarforms (5 different for example, but it could be less or more) APIs every 2 seconds. Each of the **JSON response** from these **API call**s are then sent to a different **Kafka topic** (one per exchange and per financial product). At the same time, once the user entered the financial product, a UnifierOrderbook class is instantiated and basicall calls the app.run() method at some point in time to do the stream processing and merging the 5 different topics from the ExchangeFetcher.
+
+For now, I was running the 5 different API calls using **multithreading**, and did not use threading for the Unifier using app.run(). Therefore, I can't launch a new instance of Unifier in the same script without threading because, as far as I understood, the app.run() is a blocking call.
+
+My question is: Should I, and could I use multithreading with the app.run() method, meaning I could have several different app.run() running in the same script (one for each newly streamed **financial products** by the user)? Or should I launch a new container each time the user searches a new financial product (but wouldn't it become heavy in the cloud, since in the end, I would like to be able to stream hundreds or even thousands of financial products simultaneously). Sorry for the long message, and hope I explained not too bad so that you can help me.
+
+Thanks a lot!",1,0,Loud-Smell-601,2025-06-28 09:38:48,https://www.reddit.com/r/dataengineering/comments/1lmiupv/liquidity_aggregator_with_quixstreams/,1,False,False,False,False
+1lmgcgr,S3 catalogue options,"Hi! For our data stack we're using Dagster (+S3, duckdb). After setting up a few data pipelines we now run into a typical scaling issue: S3 is structured, all the data is linked to Dagster assets (except for raw direct uploads) but discoverability is hard. Are there any good open source tools to address this?",2,5,sc4les,2025-06-28 06:49:29,https://www.reddit.com/r/dataengineering/comments/1lmgcgr/s3_catalogue_options/,0,False,False,False,False
+1lmg2hl,Has anyone successfully gotten a callback for Amazon Data Engineer or BI roles? Need help navigating the process :(,"I’ve been consistently applying to multiple Data Engineer and Business Intelligence roles at Amazon (USA) over the past few months. I’ve also reached out to several Amazonians at senior levels in the same roles—and in a few cases, even received referrals from them.
+
+Despite that, I haven’t received any online assessments or heard back from the hiring team for any of the positions. I’m starting to wonder what the actual process looks like—what triggers a callback, and whether referrals really help here.
+
+If anyone from the community has successfully landed a role or knows how Amazon’s DE/BI hiring works, I’d really appreciate any insights or advice. And if any Amazonians happen to see this, I’d be grateful to hear your perspective too!",2,0,WesternOtherwise7705,2025-06-28 06:31:50,https://www.reddit.com/r/dataengineering/comments/1lmg2hl/has_anyone_successfully_gotten_a_callback_for/,0,False,False,False,False
+1lm3ogl,What do you use for schema evolution in the data lake?,"Handling of changing data types in the source data is a challenge. Next, I'll explore variant types once we migrate to Spark 4.",1,1,Then_Crow6380,2025-06-27 20:05:47,https://www.reddit.com/r/dataengineering/comments/1lm3ogl/what_do_you_use_for_schema_evolution_in_the_data/,0,False,False,False,False
+1llvv2d,End to End Data Engineering Project | What is Data Engineering ? | Part 1,,1,0,Beneficial-Buyer-569,2025-06-27 14:51:55,https://youtube.com/watch?v=FToSFSVz9WM&si=tqNxT6FCauNxntQS,0,False,False,False,False
+1llvs04,Biggest Pains in Current Tooling?,"Curious what tools are you using, what are the biggest pains you currently experience with them (and primary value you get).",0,17,AMDataLake,2025-06-27 14:48:31,https://www.reddit.com/r/dataengineering/comments/1llvs04/biggest_pains_in_current_tooling/,0,False,False,False,False
+1llu6yc,Turning DBT snapshots into SCD2 Silver tables,"I have started capturing company wide data in SCDs with DBT snapshots. I want to turn these into silver dim and fact models but I need to retain all changes in the snapshots from and thru timestamps.
+
+I wrote a DBT macro that joins any table needed for a query together and sorts out the from and thrus but it feels clunky. It feels like the wrong solution. What's the best way you have found to join many SCDs into one SCD while capturing the start and and timestamps all of the changes in every table involved? ",1,8,Mike8219,2025-06-27 13:41:25,https://www.reddit.com/r/dataengineering/comments/1llu6yc/turning_dbt_snapshots_into_scd2_silver_tables/,0,False,False,False,False
+1lmd9m4,dbt Cloud w/o deployments?,"In a project where we use dbt Cloud but really we are missing out on a bunch of stuff included in the platform. 
+
+We deploy the dbt project with Azure DevOps, not the built-in deployments or Slim CI. The project gets uploaded to Databricks and we orchestrate everything from there.
+
+Now, by doing this, we don’t make use of the environments in dbt Cloud and not even the docs page/explore at all. Our builds require full parse each time as we don’t have the manifest. We can’t defer.
+
+The infra was set up by another company so I’m not sure if there are any pros that I have missed, of if there are cons that they missed by doing it this way?
+
+I could also mention we have 4 repos in total and all of them run cicd in ADO, if ”keep everything in one place” would be an argument.",1,2,yeykawb,2025-06-28 03:43:56,https://www.reddit.com/r/dataengineering/comments/1lmd9m4/dbt_cloud_wo_deployments/,0,False,False,False,False
+1llq8jw,SQLite questions,"Hello everyone, I have a question, 
+How can I to do conection with SQLite for SQL server? 
+I tried to do conection with ODBC, but doesn't works.
+",0,3,Thalissa_,2025-06-27 10:13:27,https://www.reddit.com/r/dataengineering/comments/1llq8jw/sqlite_questions/,0,False,False,False,False
